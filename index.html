@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thịnh Ký</title>
+    <meta name="description" content="Thịnh Ký - Nhà hàng ẩm thực truyền thống với những món ăn ngon và không gian ấm cúng">
+    <meta name="keywords" content="nhà hàng, ẩm thực, dim sum, món ăn truyền thống, Thịnh Ký">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Logo Thịnh Ký.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Logo Thịnh Ký.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="Logo Thịnh Ký.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Logo Thịnh Ký.png">
+    <link rel="shortcut icon" type="image/png" href="Logo Thịnh Ký.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Logo Thịnh Ký.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Thịnh Ký</h1>
+                    </div>
+                </div>
+                
+                
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link active">Trang chủ</a>
+                    <a href="menu.html" class="nav-link">Thực đơn</a>
+                    <a href="about.html" class="nav-link">Về chúng tôi</a>
+                    <a href="contact.html" class="nav-link">Liên hệ</a>
+                    <div class="nav-buttons">
+                        <a href="contact.html#booking" class="btn-nav btn-booking">
+                            <i class="fas fa-calendar-check"></i> Đặt bàn
+                        </a>
+                        <a href="https://zalo.me/1895421202242839595" class="btn-nav btn-contact">
+                            <i class="fas fa-phone"></i> Liên hệ
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="img_landing.png" alt="Mâm cơm truyền thống" loading="eager">
+        </div>
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Đậm đà <span class="highlight">hương vị gia đình</span> mang trọn <span class="highlight">từng khoảnh khắc</span></h2>
+                        <p>Trọn vẹn trong từng món ăn, trọn vẹn trong từng khoảnh khắc</p>
+                        <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">
+                        <i class="fas fa-utensils"></i>
+                        Xem thực đơn
+                    </a>
+                    <button class="btn btn-secondary" onclick="window.location.href='tel:033360935'">
+                        <i class="fas fa-phone"></i>
+                        Liên hệ đặt món
+                    </button>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section
+    <section class="about section-base" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Về chúng tôi</h2>
+                <p>Hương vị truyền thống, phong cách hiện đại</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Công thức gia truyền</h3>
+                    <p>Các món ăn được chế biến theo công thức truyền thống được truyền lại qua nhiều thế hệ.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Nguyên liệu tươi ngon</h3>
+                    <p>Chúng tôi chỉ sử dụng những nguyên liệu tươi ngon nhất, được lựa chọn kỹ càng hàng ngày.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Phục vụ tận tâm</h3>
+                    <p>Đội ngũ nhân viên chuyên nghiệp luôn sẵn sàng mang đến trải nghiệm tốt nhất cho khách hàng.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Our Story Section -->
+    <section class="our-story section-base">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Quán ăn Thịnh Ký</h2>
+                    <p>Thịnh Ký được thành lập với tình yêu và đam mê ẩm thực. Chúng tôi tin rằng mỗi món ăn đều mang trong mình một câu chuyện, một kỷ niệm và tình cảm đặc biệt.</p>
+                    <p>Từ những ngày đầu, chúng tôi đã cam kết mang đến cho khách hàng những trải nghiệm ẩm thực tuyệt vời nhất, với hương vị chân thật và dịch vụ chu đáo.</p>
+                </div>
+                <div class="story-image">
+                    <div class="image-frame">
+                        <img src="quan_an.jpg" alt="Đầu bếp Thịnh Ký - Nghệ thuật ẩm thực truyền thống" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section-base" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Danh mục thực đơn</h2>
+                <p>Khám phá món ngon tại Thịnh Ký</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="mamcomthinhky.jpg" alt="mamcomthinhky" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Mâm cơm Thịnh Ký</h3>
+                        <div class="price">55.000₫</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="tauhukydauao.jpg" alt="tauhukydauhao" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Tàu hủ ky dầu hào</h3>
+                        <div class="price">45.000₫</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="xiumainuoc.webp" alt="xiumainuoc" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Xíu mại nước</h3>
+                        <div class="price">45.000₫</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="suicaosottuxuyen.jpg" alt="suicaosottuxuyen" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Sủi cảo sốt Tứ Xuyên</h3>
+                        <div class="price">45.000₫</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="xiumaitomthit.jpg" alt="xiumaitomthit" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Xíu mại tôm thịt</h3>
+                        <div class="price">45.000₫</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="hutieumysuicao.webp" alt="hutieumysuicao" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Hủ tiếu mỳ sủi cảo</h3>
+                        <div class="price">55.000₫</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-button">
+                <a href="menu.html" class="btn btn-primary">
+                    <i class="fas fa-play"></i>
+                    Xem thực đơn đầy đủ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Space Section -->
+    <section class="restaurant-space section-base">
+        <div class="container">
+            <div class="section-header">
+                <h2>Không gian quán</h2>
+            </div>
+            
+            <div class="space-gallery">
+                <div class="space-item">
+                    <div class="space-image">
+                        <img src="khonggianquan_1.jpg" alt="Không gian nhà hàng" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="space-item">
+                    <div class="space-image">
+                        <img src="khonggianquan_2.jpg" alt="Không gian nhà hàng" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="space-item">
+                    <div class="space-image">
+                        <img src="khonggian1.jpg" alt="Không gian nhà hàng" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="space-item">
+                    <div class="space-image">
+                        <img src="khonggian2.jpg" alt="Không gian nhà hàng" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="space-item">
+                    <div class="space-image">
+                        <img src="khonggian3.jpg" alt="Không gian nhà hàng" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="space-item">
+                    <div class="space-image">
+                        <img src="khonggian4.jpg" alt="Không gian nhà hàng" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-base" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Liên hệ đặt bàn</h2>                    
+                    <div class="contact-details">
+                        <h3>Thông tin liên hệ</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <strong>Địa chỉ</strong>
+                                <p> 806 Đường Âu Cơ, phường Tân Bình, TP.HCM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <strong>Số điện thoại</strong>
+                                <p>0967957104</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <strong>Email</strong>
+                                <p>quananthinhky@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-text">
+                                <strong>Người liên hệ</strong>
+                                <p>Anh hehe - Quản lý: 0123 456 789</p>
+                                <p>Chị hihi - Phục vụ: 0987 654 321</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <h3>Đặt bàn trực tuyến</h3>
+                    <!-- <form class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Họ và tên *</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Nhập họ và tên" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Nhập số điện thoại" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Số lượng khách *</label>
+                                <select id="guests" name="guests" class="form-control" required>
+                                    <option value="">Chọn số lượng khách</option>
+                                    <option value="1">1 người</option>
+                                    <option value="2">2 người</option>
+                                    <option value="3">3 người</option>
+                                    <option value="4">4 người</option>
+                                    <option value="5">5 người</option>
+                                    <option value="6">6 người</option>
+                                    <option value="7">7-10 người</option>
+                                    <option value="8">10+ người</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Ngày đặt bàn *</label>
+                                <input type="date" id="date" name="date" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="time">Giờ đặt bàn *</label>
+                                <select id="time" name="time" class="form-control" required>
+                                    <option value="">Chọn giờ</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="table_type">Loại bàn</label>
+                                <select id="table_type" name="table_type" class="form-control">
+                                    <option value="">Chọn loại bàn</option>
+                                    <option value="normal">Bàn thường</option>
+                                    <option value="vip">Bàn VIP</option>
+                                    <option value="private">Phòng riêng</option>
+                                    <option value="garden">Sân vườn</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">Ghi chú đặc biệt</label>
+                            <textarea id="notes" name="notes" class="form-control" rows="4" placeholder="Nhập ghi chú đặc biệt (dị ứng, yêu cầu đặc biệt, sự kiện...)"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-calendar-check"></i>
+                            Xác nhận đặt bàn
+                        </button>
+                    </form> -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL2FDFY9qS2_2sCQUPAY2BwGd3oO-LeRP7tfc70_bjmq-S9g/viewform?embedded=true" width="640" height="676" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <!-- <div class="footer-logo">
+                        <div class="logo">
+                            <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
+                        </div>
+                        <div class="logo-text">
+                            <h3>Thịnh Ký</h3>
+                            <p>Tân Phú</p>
+                        </div>
+                    </div> -->
+                    <div class="logo-section">
+                        <div class="logo">
+                            <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
+                        </div>
+                        <div class="logo-text">
+                            <h1>Thịnh Ký</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên kết nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#menu">Thực đơn</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>806 Đường Âu Cơ, phường Tân Bình, TP.HCM</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>0967957104</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>quananthinhky@gmail.com</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>6:30 - 20:30 (Hàng ngày)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61581438242174" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
