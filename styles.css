@@ -81,7 +81,7 @@ body::before {
 .logo {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #fce390, #f1e46b);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
     border-radius: 50%;
     display: flex;
     align-items: center;
