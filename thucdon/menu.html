@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn - Thịnh Ký</title>
+    <meta name="description" content="Khám phá thực đơn đa dạng tại Thịnh Ký ">
+    <meta name="keywords" content="thực đơn, dim sum, món ăn, nhà hàng, Thịnh Ký">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logothinhky.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logothinhky.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="logothinhky.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logothinhky.png">
+    <link rel="shortcut icon" type="image/png" href="logothinhky.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logothinhky.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="logothinhky.png" alt="Thịnh Ký Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Thịnh Ký</h1>
+                    </div>
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                    <a href="menu.html" class="nav-link active">Thực đơn</a>
+                    <a href="about.html" class="nav-link">Về chúng tôi</a>
+                    <a href="contact.html" class="nav-link">Liên hệ</a>
+                    <div class="nav-buttons">
+                        <a href="contact.html#booking" class="btn-nav btn-booking">
+                            <i class="fas fa-calendar-check"></i> Đặt bàn
+                        </a>
+                        <a href="contact.html" class="btn-nav btn-contact">
+                            <i class="fas fa-phone"></i> Liên hệ
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Page -->
+    <section class="menu-page">
+        <div class="container">
+            
+            <div class="section-header">
+                <h2>Thực Đơn Thịnh Ký</h2>
+            </div>
+            
+            <!-- Category Navigation -->
+            <div class="menu-categories">
+                <button class="category-btn full-menu-btn active" data-category="full-menu">
+                    <i class="fas fa-list"></i>
+                    Toàn bộ thực đơn
+                </button>
+                <button class="category-btn" data-category="hutieumi">Hủ Tiếu - Mì</button>
+                <button class="category-btn" data-category="dimsum">Dimsum</button>
+                <button class="category-btn" data-category="mamcom">Mâm cơm Thịnh Ký</button>
+                <button class="category-btn" data-category="mongoithem">Món gọi thêm</button>
+                <button class="category-btn" data-category="nuocuong">Nước uống</button>
+            </div>
+            
+            <!-- Full Menu Section -->
+            <div class="menu-section active" id="full-menu">
+                
+                <!-- Hu tieu mi -->
+                <div class="full-menu-category">
+                    <h4 class="category-title">Hủ tiếu - Mì </h4>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hutieumisuicao.webp" alt="Hu tieu mi sủi cảo">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hủ tiếu - Mì sủi cảo</h3>
+                                <div class="menu-price">55.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="huitieumyxaxiu.jpg" alt="Hủ tiếu mì xá xíu ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hủ tiếu - Mì xá xíu</h3>
+                                <div class="menu-price">55.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hutieumyga.jpg" alt="Hủ tiếu mì Gà">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hủ tiếu - Mì gà</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hutieuxuongong.jpg" alt="Hủ tiếu - Mì xương ống">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hủ tiếu - Mì xương ống/ sườn</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hutieumyca.webp" alt="Hủ tiếu - Mì cá">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hủ tiếu - Mì cá</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hutieumythapcam.jpg" alt="Hủ tiếu - Mì thập cẩm">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hủ tiếu - Mì thập cẩm</h3>
+                                <div class="menu-price">60.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="suicao.jpg" alt="Sủi cảo">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Sủi cảo</h3>
+                                <div class="menu-price">55.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="hoanhthanh.jpg" alt="Hoành thánh">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hoành thánh</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dimsum -->
+                <div class="full-menu-category">
+                    <h4 class="category-title">Dimsum</h4>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="xiumaitomthit.jpg" alt="Xíu mại tôm thịt">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Xíu mại tôm thịt</h3>
+                                <div class="menu-price">45.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="xiumainuoc.jpg" alt="Xíu mại nước">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Xíu mại nước</h3>
+                                <div class="menu-price">45.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="changatauxi.webp" alt="Chân gà tàu xì">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Chân gà tàu xì</h3>
+                                <div class="menu-price">45.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="tauhukydauao.jpg" alt=Tàu hủ ky dầu hào">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Tàu hủ ky dầu hào</h3>
+                                <div class="menu-price">45.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="suicaosottuxuyen.jpg" alt="Sủi cảo sốt tứ xuyên">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Sủi cảo sốt tứ xuyên</h3>
+                                <div class="menu-price">45.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mâm cơm Thịnh Ký -->
+                <div class="full-menu-category">
+                    <h4 class="category-title">Mâm cơm Thịnh Ký</h4>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="mamcomthinhky.jpg" alt="Mâm cơm Thịnh Ký">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Mâm cơm Thịnh Ký</h3>
+                                <p> Phục vụ suất ăn trưa - chiều. Thực đơn thay đổi theo ngày</p>
+                                <div class="menu-price">55.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Món gọi thêm -->
+                <div class="full-menu-category">
+                    <h4 class="category-title">Món gọi thêm</h4>
+                    <p style="text-align: center; margin: 20px auto 30px; padding: 15px 20px; background: linear-gradient(135deg, #FEF3C7, #FDE68A); color: #B45309; font-weight: 600; font-size: 16px; border-left: 4px solid #F59E0B; border-radius: 8px; max-width: 600px; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);">⚠️ <strong>Lưu ý:</strong> Trường hợp Khách chỉ dùng món thêm, Quán xin phụ thu tiền cơm 10.000đ/người</p>
+                        <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="canhchuacabasa.jpg" alt="Canh chua cá ba sa">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Canh chua cá ba sa</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="tomcangkhotau.jpg" alt="Tôm càng kho tàu">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Tôm càng kho tàu</h3>
+                                <div class="menu-price">80.000₫/ 2 con</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="dungheokhonuocdua.jpg" alt="dungheokhonuocdua">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Dựng heo kho nước dừa</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="baotukhia.webp" alt="baotukhia">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Bao tử khìa</h3>
+                                <div class="menu-price">50.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="canhkhoquadonthit.jpg" alt="canhkhoquadonthit">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Canh khổ qua dồn thịt</h3>
+                                <div class="menu-price">30.000₫/1 trái</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="cahekhoruc.jpg" alt="cahekhoruc">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Cá he kho rục</h3>
+                                <div class="menu-price">80.000₫/1 con</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="lapxuongchien.jpg" alt="lapxuongchien">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Lạp xưởng chiên</h3>
+                                <div class="menu-price">30.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="thitkhohotvit.jpg" alt="thitkhohotvit">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Thịt kho hột vịt</h3>
+                                <div class="menu-price">30.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="khocaduachiengion.jpg" alt="khocaduachiengion">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Khô cá dứa chiên giòn</h3>
+                                <div class="menu-price">30.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="trungchien.jpg" alt="trungchien">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Trứng chiên</h3>
+                                <div class="menu-price">20.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nước uống -->
+                <div class="full-menu-category">
+                    <h4 class="category-title">Nước uống</h4>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="nuocsuoi.png" alt="Nước suối">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Nước suối</h3>
+                                <div class="menu-price">12.000₫</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="nước ngọt.jpg" alt="Nước ngọt">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Nước ngọt</h3>
+                                <p>Pepsi, Coca, Sting dâu, 7UP, Redbull, Trà ô long chai</p>
+                                <div class="menu-price">20.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="nuocep.webp" alt="Nước ép">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Nước ép</h3>
+                                <p>Bưởi, cóc, cam, cà rốt, ổi, táo, dưa hấu, chanh dây, thơm, đá chanh</p>
+                                <div class="menu-price">25.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="nuocep.webp" alt="Nước ép">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Nước ép</h3>
+                                <p>Bưởi, cóc, cam, cà rốt, ổi, táo, dưa hấu, chanh dây, thơm, đá chanh</p>
+                                <div class="menu-price">25.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="saigonchill.png" alt="saigonchill">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Bia Saigon Chill</h3>
+                                <div class="menu-price">25.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="saigonspecial.jpg" alt="saigonspecial">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Bia Saigon Special</h3>
+                                <div class="menu-price">25.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="tiger.webp" alt="tiger">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Tiger Nâu/Bạc</h3>
+                                <div class="menu-price">28.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="heineken.webp" alt="heineken">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Heineken Xanh/Bạc</h3>
+                                <div class="menu-price">30.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="capheden.png" alt="capheden">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Café đen</h3>
+                                <div class="menu-price">20.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="caphesuada.jpg" alt="caphesuada">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Cà phê sữa đá</h3>
+                                <div class="menu-price">25.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="caphesuatuoi.jpeg" alt="caphesuatuoi">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Café sữa tươi</h3>
+                                <div class="menu-price">28.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="bacxiu.png" alt="bacxiu">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Bạc Xỉu</h3>
+                                <div class="menu-price">28.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="caphehanhnhan.webp" alt="caphehanhnhan">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Café hạnh nhân</h3>
+                                <div class="menu-price">28.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="matcha latte.jpg" alt="matcha">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Matcha Latte / Matcha Oatmilk</h3>
+                                <div class="menu-price">30.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="tải xuống.jpeg" alt="trasua">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Hồng trà sữa / Trà sữa ô long</h3>
+                                <div class="menu-price">30.000₫</div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="trasenchanh.jpg" alt="trasenchanh">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3>Trà sen chanh</h3>
+                                <div class="menu-price">15.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hủ Tiếu - Mì Section -->
+            <div class="menu-section" id="hutieumi">
+                <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #8B4513; margin-bottom: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Hủ Tiếu - Mì</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="hutieumisuicao.webp" alt="Hu tieu mi sủi cảo">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hủ tiếu - Mì sủi cảo</h3>
+                            <div class="menu-price">55.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="huitieumyxaxiu.jpg" alt="Hủ tiếu mì xá xíu ">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hủ tiếu - Mì xá xíu</h3>
+                            <div class="menu-price">55.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="hutieumyga.jpg" alt="Hủ tiếu mì Gà">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hủ tiếu - Mì gà</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="hutieuxuongong.jpg" alt="Hủ tiếu - Mì xương ống">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hủ tiếu - Mì xương ống/ sườn</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="hutieumyca.webp" alt="Hủ tiếu - Mì cá">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hủ tiếu - Mì cá</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="hutieumythapcam.jpg" alt="Hủ tiếu - Mì thập cẩm">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hủ tiếu - Mì thập cẩm</h3>
+                            <div class="menu-price">60.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="suicao.jpg" alt="Sủi cảo">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Sủi cảo</h3>
+                            <div class="menu-price">55.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="hoanhthanh.jpg" alt="Hoành thánh">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hoành thánh</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dim Sum Section -->
+            <div class="menu-section" id="dimsum">
+                <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #8B4513; margin-bottom: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Dim Sum</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="xiumaitomthit.jpg" alt="Xíu mại tôm thịt">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Xíu mại tôm thịt</h3>
+                            <div class="menu-price">45.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="xiumainuoc.jpg" alt="Xíu mại nước">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Xíu mại nước</h3>
+                            <div class="menu-price">45.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="changatauxi.webp" alt="Chân gà tàu xì">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Chân gà tàu xì</h3>
+                            <div class="menu-price">45.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="tauhukydauao.jpg" alt="Tàu hủ ky dầu hào">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Tàu hủ ky dầu hào</h3>
+                            <div class="menu-price">45.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="suicaosottuxuyen.jpg" alt="Sủi cảo sốt tứ xuyên">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Sủi cảo sốt tứ xuyên</h3>
+                            <div class="menu-price">45.000₫</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mâm cơm Thịnh Ký Section -->
+            <div class="menu-section" id="mamcom">
+                <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #8B4513; margin-bottom: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Mâm cơm Thịnh Ký</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="mamcomthinhky.jpg" alt="Mâm cơm Thịnh Ký">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Mâm cơm Thịnh Ký</h3>
+                            <p> Phục vụ suất ăn trưa - chiều. Thực đơn thay đổi theo ngày</p>
+                            <div class="menu-price">55.000₫</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Món gọi thêm Section -->
+            <div class="menu-section" id="mongoithem">
+                <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #8B4513; margin-bottom: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Món gọi thêm</h3>
+                <p style="text-align: center; margin-bottom: 30px; color: #666;">**Trường hợp Khách chỉ dùng món thêm, Quán xin phụ thu tiền cơm 10.000đ/người</p>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="canhchuacabasa.jpg" alt="Canh chua cá ba sa">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Canh chua cá ba sa</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="tomcangkhotau.jpg" alt="Tôm càng kho tàu">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Tôm càng kho tàu</h3>
+                            <div class="menu-price">80.000₫/ 2 con</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="dungheokhonuocdua.jpg" alt="dungheokhonuocdua">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Dựng heo kho nước dừa</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="baotukhia.webp" alt="baotukhia">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Bao tử khìa</h3>
+                            <div class="menu-price">50.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="canhkhoquadonthit.jpg" alt="canhkhoquadonthit">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Canh khổ qua dồn thịt</h3>
+                            <div class="menu-price">30.000₫/1 trái</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="cahekhoruc.jpg" alt="cahekhoruc">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Cá he kho rục</h3>
+                            <div class="menu-price">80.000₫/1 con</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="lapxuongchien.jpg" alt="lapxuongchien">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Lạp xưởng chiên</h3>
+                            <div class="menu-price">30.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="thitkhohotvit.jpg" alt="thitkhohotvit">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Thịt kho hột vịt</h3>
+                            <div class="menu-price">30.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="khocaduachiengion.jpg" alt="khocaduachiengion">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Khô cá dứa chiên giòn</h3>
+                            <div class="menu-price">30.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="trungchien.jpg" alt="trungchien">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Trứng chiên</h3>
+                            <div class="menu-price">20.000₫</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nước uống Section -->
+            <div class="menu-section" id="nuocuong">
+                <h3 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #8B4513; margin-bottom: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Nước uống</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="nuocsuoi.png" alt="Nước suối">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Nước suối</h3>
+                            <div class="menu-price">12.000₫</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="nước ngọt.jpg" alt="Nước ngọt">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Nước ngọt</h3>
+                            <p>Pepsi, Coca, Sting dâu, 7UP, Redbull, Trà ô long chai</p>
+                            <div class="menu-price">20.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="nuocep.webp" alt="Nước ép">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Nước ép</h3>
+                            <p>Bưởi, cóc, cam, cà rốt, ổi, táo, dưa hấu, chanh dây, thơm, đá chanh</p>
+                            <div class="menu-price">25.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="saigonchill.png" alt="saigonchill">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Bia Saigon Chill</h3>
+                            <div class="menu-price">25.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="saigonspecial.jpg" alt="saigonspecial">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Bia Saigon Special</h3>
+                            <div class="menu-price">25.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="tiger.webp" alt="tiger">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Tiger Nâu/Bạc</h3>
+                            <div class="menu-price">28.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="heineken.webp" alt="heineken">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Heineken Xanh/Bạc</h3>
+                            <div class="menu-price">30.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="capheden.png" alt="capheden">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Café đen</h3>
+                            <div class="menu-price">20.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="caphesuada.jpg" alt="caphesuada">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Cà phê sữa đá</h3>
+                            <div class="menu-price">25.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="caphesuatuoi.jpeg" alt="caphesuatuoi">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Café sữa tươi</h3>
+                            <div class="menu-price">28.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="bacxiu.png" alt="bacxiu">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Bạc Xỉu</h3>
+                            <div class="menu-price">28.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="caphehanhnhan.webp" alt="caphehanhnhan">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Café hạnh nhân</h3>
+                            <div class="menu-price">28.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="matcha latte.jpg" alt="matcha">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Matcha Latte / Matcha Oatmilk</h3>
+                            <div class="menu-price">30.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="tải xuống.jpeg" alt="trasua">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Hồng trà sữa / Trà sữa ô long</h3>
+                            <div class="menu-price">30.000₫</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="trasenchanh.jpg" alt="trasenchanh">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Trà sen chanh</h3>
+                            <div class="menu-price">15.000₫</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <!-- <div class="footer-logo">
+                        <div class="logo">
+                            <img src="Logo Thịnh Ký.png" alt="Thịnh Ký Logo">
+                        </div>
+                        <div class="logo-text">
+                            <h3>Thịnh Ký</h3>
+                            <p>Tân Phú</p>
+                        </div>
+                    </div> -->
+                    <div class="logo-section">
+                        <div class="logo">
+                            <img src="logothinhky.png" alt="Thịnh Ký Logo">
+                        </div>
+                        <div class="logo-text">
+                            <h1>Thịnh Ký</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liên kết nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#menu">Thực đơn</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Thông tin</h4>
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>806 Đường Âu Cơ, phường Tân Bình, TP.HCM</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>0967957104</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>quananthinhky@gmail.com</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>6:30 - 20:30 (Hàng ngày)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61581438242174" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
